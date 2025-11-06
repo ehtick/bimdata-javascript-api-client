@@ -52,6 +52,9 @@ class GroupRequest {
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
+            if (data.hasOwnProperty('short_name')) {
+                obj['short_name'] = ApiClient.convertToType(data['short_name'], 'String');
+            }
             if (data.hasOwnProperty('color')) {
                 obj['color'] = ApiClient.convertToType(data['color'], 'String');
             }
@@ -67,6 +70,12 @@ class GroupRequest {
  * @member {String} name
  */
 GroupRequest.prototype['name'] = undefined;
+
+/**
+ * Short name of the group
+ * @member {String} short_name
+ */
+GroupRequest.prototype['short_name'] = undefined;
 
 /**
  * @member {String} color

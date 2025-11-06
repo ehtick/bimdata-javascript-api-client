@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **String** | Full name of the group | [optional] 
+**shortName** | **String** | Short name of the group | [optional] 
 **color** | **String** |  | [optional] 
 
 

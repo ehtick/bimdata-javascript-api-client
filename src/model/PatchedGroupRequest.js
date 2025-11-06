@@ -50,6 +50,9 @@ class PatchedGroupRequest {
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
+            if (data.hasOwnProperty('short_name')) {
+                obj['short_name'] = ApiClient.convertToType(data['short_name'], 'String');
+            }
             if (data.hasOwnProperty('color')) {
                 obj['color'] = ApiClient.convertToType(data['color'], 'String');
             }
@@ -65,6 +68,12 @@ class PatchedGroupRequest {
  * @member {String} name
  */
 PatchedGroupRequest.prototype['name'] = undefined;
+
+/**
+ * Short name of the group
+ * @member {String} short_name
+ */
+PatchedGroupRequest.prototype['short_name'] = undefined;
 
 /**
  * @member {String} color
